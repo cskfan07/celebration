@@ -1,4 +1,5 @@
  
+  
  <!DOCTYPE html>
  <html lang="en">
  <head>
@@ -14,7 +15,7 @@
 nav{
     background-color: rgb(22, 16, 16);
     color: antiquewhite;
-    margin: 5px;
+   
     display: flex;
      
     
@@ -36,7 +37,7 @@ li {
 #logo {
     margin: 10px;
     position: relative;
-    top: 7px;
+    top: 3px;
     /* left: 20px; */
 }
 #cr{
@@ -47,7 +48,7 @@ li {
      
     height: 100vh;
     width: 99vw;
-    margin: 5px;
+   
     display: flex;
     justify-content: center;
      
@@ -58,7 +59,7 @@ li {
 	position: relative;
 	background-color: rgb(243, 243, 250);
 	width: 257px;
-	top: 170px;
+	top: 270px;
 	height: 26px;
 	border: 2px solid #c2f900;
 	border-radius: 5px;
@@ -68,7 +69,7 @@ li {
 .ok {
 	height: 31px;
 	width: 66px;
-	top:  270px;
+	top:  370px;
 	position: absolute;
 	/* left: 60vw; */
 	border: 3px solid rgb(252, 0, 0);
@@ -82,7 +83,7 @@ li {
   img{
     display: flex;
     position: absolute;
-    height: 62vw;
+    height: 100vh;
 
   }
    
@@ -91,27 +92,34 @@ li {
  <body>
     <nav>
         <ul>
-            <h1><span id="logo">indian<span id="cr">.</span>ai</span></h1>
-            <li><a href="index.html" class="home">Home</a></li>
-            <LI>About</LI>
+            <h1><span id="logo">CELEBRATION<span id="cr">.</span>ai</span></h1>
+           
+            
         </ul>
     </nav>
     <div class="container">
              <img src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
             <input type="text" placeholder="enterYourName" class="text">
-            <option value="gender">male</option>
-            <option value="gender">female</option>
+            
             <button onclick="ok()" type="submit" value="ok" class="ok"> ok</button>
 
     </div>
 
  </body>
  <script  type="text/javascript"> 
- 
+ alert("YOU ARE WELCOME \n आपका स्वागत है :)");
  
  function ok(){
+var text;
+
     var name =document.getElementsByClassName("text")[0].value;
-    alert("MR/MRs " + name +"                      ANKIT KUMAR GUPTA Wishesh you a very happy holi to all your family . THANK YOU :)");
+text="Dear   "+name+"   \n  Wishes A Happy Holi to you and your family from Ankit Kumar Gupta.   \n "+"अंकित कुमार गुप्ता की ओर से आपको और आपके परिवार को होली की हार्दिक शुभकामनाएं। "+ "\n धन्यवाद";
+if(document.getElementsByClassName("text")[0].value != ""){
+     alert(text);
+} 
+else {
+ alert("Please Enter Your Name!... ");
+}
  }
  
  
