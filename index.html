@@ -1,0 +1,119 @@
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project1</title>
+     <style>
+        *{
+    margin: 0;padding: 0;
+}
+
+nav{
+    background-color: rgb(22, 16, 16);
+    color: antiquewhite;
+    margin: 5px;
+    display: flex;
+     
+    
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    
+}
+li {
+    margin: 15px;
+    font-size: small;
+    position: relative;
+    left: 28px;
+}
+.home{
+    color: white;
+}
+#logo {
+    margin: 10px;
+    position: relative;
+    top: 7px;
+    /* left: 20px; */
+}
+#cr{
+    color: red;
+}
+
+.container{
+     
+    height: 100vh;
+    width: 99vw;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+     
+    
+}
+.text {
+	display: flex;
+	position: relative;
+	background-color: rgb(243, 243, 250);
+	width: 257px;
+	top: 170px;
+	height: 26px;
+	border: 2px solid #c2f900;
+	border-radius: 5px;
+	background-color: #41caea;
+	text-align: center;
+}
+.ok {
+	height: 31px;
+	width: 66px;
+	top:  270px;
+	position: absolute;
+	/* left: 60vw; */
+	border: 3px solid rgb(252, 0, 0);
+	background-color: #54e9b7;
+	border-radius: 25px;
+	font-size: 15px;
+    cursor: pointer;
+    color: black;
+     
+}
+  img{
+    display: flex;
+    position: absolute;
+    height: 62vw;
+
+  }
+   
+     </style>
+ </head>
+ <body>
+    <nav>
+        <ul>
+            <h1><span id="logo">indian<span id="cr">.</span>ai</span></h1>
+            <li><a href="index.html" class="home">Home</a></li>
+            <LI>About</LI>
+        </ul>
+    </nav>
+    <div class="container">
+             <img src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+            <input type="text" placeholder="enterYourName" class="text">
+            <option value="gender">male</option>
+            <option value="gender">female</option>
+            <button onclick="ok()" type="submit" value="ok" class="ok"> ok</button>
+
+    </div>
+
+ </body>
+ <script  type="text/javascript"> 
+ 
+ 
+ function ok(){
+    var name =document.getElementsByClassName("text")[0].value;
+    alert("MR/MRs " + name +"                      ANKIT KUMAR GUPTA Wishesh you a very happy holi to all your family . THANK YOU :)");
+ }
+ 
+ 
+ </script>
+ </html>
