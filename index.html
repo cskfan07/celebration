@@ -115,8 +115,8 @@ li {
  alert("YOU ARE WELCOME \n आपका स्वागत है :)");
  const video = document.createElement('video');
       video.src='VN20230305_145839.mp4';
-       video.height= 900;
-      video.width=window.innerWidth;
+       video.height= window.innerheight;
+      video.width=400;
       video.controls= false;
       var div =document.getElementById('myVdo');
       
@@ -126,7 +126,7 @@ li {
 var text;
 
     var name =document.getElementsByClassName("text")[0].value;
-text="Dear   "+name+"   \n  Wishes A Happy Holi to you and your family from Ankit Kumar Gupta.   \n "+" \n अंकित कुमार गुप्ता की ओर से आपको और आपके परिवार को होली की हार्दिक शुभकामनाएं। "+ "\n धन्यवाद";
+text="Dear "+name+"   \n  Wishes A Happy Holi to you and your family from Ankit Kumar Gupta.   \n "+" \n अंकित कुमार गुप्ता की ओर से आपको और आपके परिवार को होली की हार्दिक शुभकामनाएं। "+ "\n  _____धन्यवाद_____";
 if(document.getElementsByClassName("text")[0].value != ""){
       if(confirm(text)){
         myVdo.style.display="flex";
