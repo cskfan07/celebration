@@ -81,7 +81,15 @@ li {
     color: black;
      
 }
-  
+#myVdo {
+	 
+     height: 98vh;
+     width: 61vw;
+     z-index: 1;
+     display:  none;
+     justify-content: center;
+     position: absolute;
+ }
    
      </style>
  </head>
@@ -94,7 +102,8 @@ li {
         </ul>
     </nav>
     <div class="container">
-             
+        <div id="myVdo"></div>  
+
             <input type="text" placeholder="enterYourName" class="text">
             
             <button onclick="ok()" type="submit" value="ok" class="ok"> ok</button>
@@ -104,14 +113,29 @@ li {
  </body>
  <script  type="text/javascript"> 
  alert("YOU ARE WELCOME \n आपका स्वागत है :)");
+ const video = document.createElement('video');
+      video.src='holi vdo.mp4';
+       video.height= 800;
+      video.width=window.innerWidth;
+      video.controls= false;
+      var div =document.getElementById('myVdo');
+      
+
  
  function ok(){
 var text;
 
     var name =document.getElementsByClassName("text")[0].value;
-text="Dear   "+name+"   \n  Wishes A Happy Holi to you and your family from Ankit Kumar Gupta.   \n "+"अंकित कुमार गुप्ता की ओर से आपको और आपके परिवार को होली की हार्दिक शुभकामनाएं। "+ "\n धन्यवाद";
+text="Dear   "+name+"   \n  Wishes A Happy Holi to you and your family from Ankit Kumar Gupta.   \n "+" \n अंकित कुमार गुप्ता की ओर से आपको और आपके परिवार को होली की हार्दिक शुभकामनाएं। "+ "\n धन्यवाद";
 if(document.getElementsByClassName("text")[0].value != ""){
-     alert(text);
+      if(confirm(text)){
+        myVdo.style.display="flex";
+        div.appendChild(video);
+        video.play();
+      }
+      else{
+        alert("please select ok button :) and try again ...");
+      }
 } 
 else {
  alert("Please Enter Your Name!... ");
