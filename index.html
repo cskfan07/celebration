@@ -66,6 +66,7 @@ li {
 	border-radius: 5px;
 	background-color: #41caea;
 	text-align: center;
+	opacity:1;
 }
 .ok {
 	height: 31px;
@@ -79,6 +80,7 @@ li {
 	font-size: 15px;
     cursor: pointer;
     color: black;
+	opacity:1;
      
 }
 #myVdo {
@@ -132,6 +134,8 @@ if(document.getElementsByClassName("text")[0].value != ""){
         myVdo.style.display="flex";
         div.appendChild(video);
         video.play();
+	text.style.opacity="0";
+        ok.style.opacity="0";
       }
       else{
         alert("please select ok button :) and try again ...");
